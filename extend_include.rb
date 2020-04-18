@@ -1,11 +1,11 @@
-class Cat
+module Cat
 
   def say
     p 'hi'
   end
 end
 
-class Bird
+module Bird
   def say
     p 'hello'
   end
