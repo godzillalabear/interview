@@ -1,3 +1,6 @@
+#include -> instance method
+#extend -> class method
+#the method define later will overwrite the previous one
 module Cat
 
   def say
@@ -16,9 +19,9 @@ class Dog
   extend Bird
 
 
-  def say
-    p 'hey'
-  end
+#  def say
+#    p 'hey'
+#  end
 end
 
 Dog.say
