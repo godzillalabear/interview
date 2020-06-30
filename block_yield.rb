@@ -10,6 +10,20 @@ def say_hello
   puts "a = #{a}"
 end
 
-say_hello {
-  puts "In the block, a = #{a}"
+# say_hello {
+#   puts "In the block, a = #{a}"
+# }
+
+def which_var
+  a = "abc"
+  yield a
+end
+
+which_var do |a|
+  puts a
+end
+
+which_var{
+  puts a
 }
+
